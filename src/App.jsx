@@ -6,7 +6,8 @@ import Impact from './pages/Impact';
 import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';  
 import Research from './pages/Research';
-
+import Contact from './pages/Contact';
+import ContactAcknowledgement from './pages/ContactAcknowledgement'
 function App() {
   return (
     <Router>
@@ -19,6 +20,8 @@ function App() {
             <Route path="/impact" element={<Impact />} />
             <Route path="/about" element={<About />} />
             <Route path="/research" element={<Research />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact-acknowledgement" element={<ContactAcknowledgement />} />
           </Routes>
         </main>
         <Footer />
