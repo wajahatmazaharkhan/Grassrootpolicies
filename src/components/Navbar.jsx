@@ -57,7 +57,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/get-involved"
               style={{
                 backgroundColor: '#2e7d32',
                 color: '#ffffff',
