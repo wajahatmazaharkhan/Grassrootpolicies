@@ -9,7 +9,11 @@ import Research from './pages/Research';
 import Contact from './pages/Contact';
 import ContactAcknowledgement from './pages/ContactAcknowledgement';
 import GetInvolved from "./pages/GetInvolved";
-import Internships from './pages/Internships'
+import Internships from './pages/Internships';
+import ApplyForm from "./pages/ApplyForm";
+import ApplicationSuccess from "./pages/ApplicationSuccess";
+import PartnerWithUs from "./pages/PartnerWithUs";
+
 function App() {
   return (
     <Router>
@@ -26,6 +30,9 @@ function App() {
             <Route path="/contact-acknowledgement" element={<ContactAcknowledgement />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/internships" element={<Internships />} />
+            <Route path="/apply" element={<ApplyForm />} />
+            <Route path="/application-success" element={<ApplicationSuccess />} />
+            <Route path="/partner-with-us" element={<PartnerWithUs />} />
           </Routes>
         </main>
         <Footer />

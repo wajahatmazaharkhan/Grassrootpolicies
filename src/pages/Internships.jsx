@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Monitor,
   ListChecks,
@@ -68,7 +69,7 @@ const roles = [
       "Assist in drafting policy briefs and reports",
       "Collaborate with research teams on governance topics"
     ],
-    applyLink: "/apply-policy"
+    applyLink: "/apply"
   },
   {
     title: "Data & Impact Intern",
@@ -81,7 +82,33 @@ const roles = [
       "Create dashboards and reports",
       "Support monitoring & evaluation work"
     ],
-    applyLink: "/apply-data"
+    applyLink: "/apply"
+  },
+  {
+    title: "Media & Communications Intern",
+    points: [
+      "Translate research into accessible content",
+      "Work on newsletters & policy explainers"
+    ],
+    details: [
+      "Convert research reports into public-friendly articles",
+      "Write policy explainers and newsletters",
+      "Assist in communication strategy for policy campaigns"
+    ],
+    applyLink: "/apply"
+  },
+  {
+    title: "Local Governance Fellow",
+    points: [
+      "Study Panchayats & Urban governance",
+      "Field-based documentation & reporting"
+    ],
+    details: [
+      "Conduct field research on local governance systems",
+      "Document case studies from Panchayats and urban bodies",
+      "Support policy research related to decentralization"
+    ],
+    applyLink: "/apply"
   }
 ];
 
@@ -291,8 +318,8 @@ const Internships = () => {
       </ul>
 
       <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
-        <a
-          href={selectedRole.applyLink}
+        <Link
+          to={selectedRole.applyLink}
           style={{
             padding: "10px 20px",
             background: "#2e7d32",
@@ -302,7 +329,7 @@ const Internships = () => {
           }}
         >
           Apply for Internship
-        </a>
+        </Link>
 
         <button
           onClick={() => setSelectedRole(null)}

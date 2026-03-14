@@ -35,7 +35,7 @@ const GetInvolved = () => {
           </div>
         </Link>
 
-        <Link to="/partner" style={{ textDecoration: "none" }}>
+        <Link to="/partner-with-us" style={{ textDecoration: "none" }}>
           <div style={cardStyle}>
             <h2 className="font-serifcustom text-[20px] mb-1">Partner With Us</h2>
             <p className="font-serifcustom text-[16px]">Collaborate to create impact-driven policy solutions.</p>
